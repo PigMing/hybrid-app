@@ -1,0 +1,15 @@
+<ion-view view-title="Tops">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="top in tops" href="#/tab/playlists/{{top.$$hashKey}}">
+      <div class="listTitle">
+      	<p>{{ top.title }}</p>
+      	<p>{{ top.src }}</p>  
+      	<p>{{ top.$$hashKey}}</p>
+      </div>
+      <img class="listImg" ng-src="{{ top.pic }}"> 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

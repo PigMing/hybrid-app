@@ -1,0 +1,28 @@
+<ion-view view-title="{{listTitle}}">
+  <ion-content>
+    <ion-list>
+            <!-- 添加小轮播 -->
+      <div class="shouyelunbo">
+          <ion-content scroll="false">
+              <ion-slides  options="options" slider="data.slider">
+                <ion-slide-page ng-repeat="list in lists | limitTo:5">
+                  <div class="box">
+                      <img ng-src="{{ list.pic }}">
+                      <h2>{{ list.title }}</h2>
+                  </div>
+                </ion-slide-page>
+              </ion-slides>
+            </ion-content>
+      </div>
+      </div>
+      <ion-item class="scroll-content-list" ng-repeat="list in lists" href="#/app/lists/{{ list.$$hashKey }}">
+      <div class="listTitle">
+        <p>{{ list.title }}</p>
+        <p>{{ list.src }}</p>  
+        <!-- <p>{{ list.$$hashKey}}</p> -->
+      </div>
+      <img class="listImg" ng-src="{{ list.pic }}"> 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

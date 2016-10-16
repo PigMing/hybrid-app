@@ -1,0 +1,17 @@
+<ion-view view-title="{{listTitle}}">
+  <ion-content >
+    <ion-list>
+      <div class="list_img" ng-repeat="list in lists | limitTo:1">
+          <img ng-src="{{ list.pic }}">
+      </div>
+      <ion-item ng-repeat="list in lists" class="scroll-content-list" href="#/app/lists/{{ list.$$hashKey }}">
+      <div class="listTitle">
+      	<p>{{ list.title }}</p>
+      	<p>{{ list.src }}</p>  
+      	<!-- <p>{{ list.$$hashKey}}</p> -->
+      </div>
+      <img class="listImg" ng-src="{{ list.pic }}"> 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

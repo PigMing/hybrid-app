@@ -1,0 +1,74 @@
+/* Empty. Add your own CSS if you like */
+//左边头部的样式
+.bar .bar-stable-top{
+	background-color:red !important;
+	height:100px !important;
+}
+
+//左边列表样式
+.leftList{
+	top:100px!important;
+}
+.listTitle{
+	float:left;
+	width:70%;
+	height:80px;	
+}
+.listTitle p{
+	white-space:normal!important;
+}
+
+.listImg{
+	float:right;
+	width:30%;
+	height:100%;
+}
+
+//列表页样式
+.list{
+	background:gray!important;
+}
+// .item-complex{
+// 	width:90%!important;
+// 	margin:0 auto;
+// 	margin-top:10px;
+
+// }
+.scroll-content-list{
+	width:90%!important;
+	height:100px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.scroll-content-detail{
+	width:90%!important;
+	margin:0 auto;
+	margin-top:10px;
+}
+.list_img{
+	width:90%;
+	margin:0 auto;
+	margin-top:10px;
+	height:200px;
+}
+.list_img img{
+	width:100%!important;
+	height:100%;
+}
+.shouyelunbo{
+	width:90%;
+	margin:0 auto;
+	margin-top:10px;
+	height:200px;
+	position:relative;
+}
+.shouyelunbo img{
+	width:100%;
+	height:100%;
+}
+.shouyelunbo h2{
+	position:absolute!important;
+	left:10%;
+	bottom: 10px;
+	color:white;
+}

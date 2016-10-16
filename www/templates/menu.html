@@ -1,0 +1,52 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <!-- left头部 -->
+    <ion-header-bar class="bar-stable bar-stable-top">
+        <h2>请登录</h2>
+    </ion-header-bar>
+    <ion-content class="leftList">
+      <ion-list>
+        <ion-item menu-close ng-init="getlist('top')" ng-click="getlist('top')" href="#/app/shouye" >
+          头条
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('jiaoyu')" href="#/app/lists">
+          教育
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('jiankang')" href="#/app/lists">
+          健康
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('yule')" href="#/app/lists">
+          娱乐
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('tiyu')" href="#/app/lists">
+          体育
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('junshi')" href="#/app/lists">
+          军事
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('keji')" href="#/app/lists">
+          科技
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('caijing')" href="#/app/lists">
+          财经
+        </ion-item>
+        <ion-item menu-close ng-click="getlist('women')" href="#/app/lists">
+          时尚
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
