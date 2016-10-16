@@ -27,9 +27,7 @@ use angular and cordova achieve hybrid app
 5. run,ionic run android(ios);手机和电脑连接，
 如果出现一下错误，打开电脑的设备管理器，查看手机的驱动是否正常，如果出现感叹号直接修复即可
 
-![error2.png](www/img/error2.png)
-
-
+![error2.png](www/img/error2.png)    
 6. 通过weinre实现实时debug	
       安装，同样通过cmd命令；npm -g install weinre;
       启动，weinre -boundHost IPAddress(本机ip)
