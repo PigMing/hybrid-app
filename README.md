@@ -26,9 +26,15 @@ use angular and cordova achieve hybrid app
 4. build, ionic bulid android(ios)
 5. run,ionic run android(ios);手机和电脑连接，
 如果出现一下错误，打开电脑的设备管理器，查看手机的驱动是否正常，如果出现感叹号直接修复即可
+
 ![error2.png](www/img/error2.png)
 6. 通过weinre实现实时debug	
       安装，同样通过cmd命令；npm -g install weinre;
       启动，weinre -boundHost IPAddress(本机ip)
       将weinre管理界面中的target script 代码直接进行复制，并粘贴到index.html文件中	
 7. 实时刷新。ionic run android -l -c;
+
+##  三：数据处理
+1. 数据来源，聚合数据免费接口
+2. 通过新浪云访问聚合数据，并将数据转化为json的格式
+3. 通过angular的承诺机制，成功渲染数据
