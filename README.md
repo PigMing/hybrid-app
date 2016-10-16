@@ -14,7 +14,7 @@ use angular and cordova achieve hybrid app
 6. java jdk/jre还有android sdk（adb）环境变量根据自己电脑百度相应安装方法     
 
 
-二：创建项目
+##  二：创建项目
 1. 创建APP
 	ionic start myApp tabs //创建带有top栏和bottom栏的实例项目，myApp为项目名（可自行定义）	
 	ionic start myApp sidemenu //创建带左侧带menu栏的实例项目    
